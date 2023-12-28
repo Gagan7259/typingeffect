@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Effect Text</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1 class="Head">Typing Effect Text</h1>
+        <p class="text"></p>
+    </div>
+    <script>
+        const text = document.querySelector('.text');
+        const Load = () => {
+            setTimeout(() => {
+                text.textContent = "Most Powerfull Weapon in The World is ->"
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "MONEY"
+            }, 2000);
+            setTimeout(() => {
+                text.textContent = "POWER"
+            }, 4000);
+            setTimeout(() => {
+                text.textContent = "So Do Hard Work"
+            }, 6000);
+            setTimeout(() => {
+                text.textContent = "Don't Flirting With Girls Like Sai"
+            }, 8000);
+
+        }
+     Load();
+        setInterval(Load, 10000)
+    </script>
+</body>
+
+</html>
